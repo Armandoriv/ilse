@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.intro .letrillas {
+  justify-content: center;
+}
+.intro .letrillas .title {
+  font-size: 70px;
+}
+.intro .letrillas .subtitle {
+  text-align: center;
+}
+.intro .letrillas .ballinas {
+  margin-left: 5px;
+}
+
+footer {
+  background: #112F2F;
+  display: flex;
+  flex: wrap;
+  margin: auto;
+}
+
+.subtexto {
+  color: white;
+  text-align: justify;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.partFooter {
+  text-align: center;
+  justify-content: center;
+}
+
+.partFooter h4 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.partFooter ul li {
+  margin-top: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  text-align: justify;
+  border-bottom: 1px solid gray;
+}
+
+.partFooter ul a {
+  text-decoration: none;
+}
+
+.socialMedia {
+  font-size: 30px;
+}
+.socialMedia .bi-facebook {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.socialMedia .bi-instagram {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.socialMedia .bi-whatsapp {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.socialMedia .bi-tiktok {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.socialMedia .bi-facebook:hover {
+  color: #4267B2;
+}
+.socialMedia .bi-instagram:hover {
+  color: #E1306C;
+}
+.socialMedia .bi-whatsapp:hover {
+  color: #25D366;
+}
+.socialMedia .bi-tiktok:hover {
+  color: black;
+}
+
+main {
+  width: 100%;
+  height: 50%;
+  background-image: url(../img/descarga.jfif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  background: #ECC8BC;
+}
+
+.anclas {
+  color: black;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+}
+
+.slider {
+  height: 300px;
+}
+
+.lego {
+  width: 300px;
+  height: 70px;
+}
+
+.medio {
+  background-color: #D6D9CD;
+  height: 500px;
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */

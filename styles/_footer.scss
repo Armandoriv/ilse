@@ -1,0 +1,69 @@
+footer{
+    background: #112F2F;
+    display: flex;
+    flex: wrap;
+    margin: auto;
+}
+.subtexto{
+    color: white;
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.partFooter{
+    text-align: center;
+    justify-content: center;
+}
+.partFooter h4{
+    color: white;
+    margin-bottom: 30px;
+}
+.partFooter ul li{
+    margin-top: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+    border-bottom: 1px solid gray;
+}
+.partFooter ul a{
+    text-decoration: none;
+
+}
+.socialMedia{
+    font-size: 30px;
+    .bi-facebook{
+        margin-left: 5px;
+        margin-right: 5px;
+        color: white;
+    }
+    .bi-instagram{
+        margin-left: 5px;
+        margin-right: 5px;
+        color: white;
+    }
+    .bi-whatsapp{
+        margin-left: 5px;
+        margin-right: 5px;
+        color: white;
+    }
+    .bi-tiktok{
+        margin-left: 5px;
+        margin-right: 5px;
+        color: white;
+    }
+    .bi-facebook:hover{
+        color: #4267B2;
+    }
+    .bi-instagram:hover{
+        color: #E1306C;
+    }
+    .bi-whatsapp:hover{
+        color: #25D366;
+    }
+    .bi-tiktok:hover{
+        color: black;
+    }
+    
+}
+

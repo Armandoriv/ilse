@@ -1,0 +1,18 @@
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    .letrillas{
+        .title{
+            font-size: 70px;
+        }
+        .subtitle{
+            text-align: center;
+        }
+        justify-content: center;
+        .ballinas{
+            margin-left: 5px;
+        }
+    }
+}
