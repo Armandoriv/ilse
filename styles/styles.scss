@@ -35,9 +35,19 @@ nav{
 }
 .medio{
     background-color: #D6D9CD;
-    height: 600px;
+    height: 650px;
     width: 100%;
+}
+.beton{
+    display: flex;
+    justify-content: center;
+
 }
 .area{
     height: 100px;
+}
+.formulario{
+    background-color: #F0CC7C;
+    border-radius: 10px;
+    padding: 2rem;
 }
