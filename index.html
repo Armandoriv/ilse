@@ -54,6 +54,7 @@
           <div class="row">
             <div class="formulario col-lg-6 mt-4">
                 <form id="form" class="form">
+                  <h1 style="text-align: center;">Contacto</h1>
                   <div class="">
                     <label for="name" class="form-label">Nombre</label>
                     <input type="text" placeholder="Nombre:" class="form-control" name="name" id="name">
@@ -106,7 +107,7 @@
               <li><p><i class="bi bi-envelope"></i>  psic.ilsemb@gmail.com</p></li>
             </ul>
         </div>
-        <div class="partFooter col-lg-4 col-md-12 mt-3">
+        <div class="partFooter col-lg-4 col-md-12 mt-5">
             <h4>Redes sociales</h4>
             <div class="socialMedia">
               <a href="#"><i class="bi bi-facebook"></i></a>
@@ -139,9 +140,9 @@ document.getElementById('form')
           title: '¡Mensaje Enviado!',
           text: 'En breve nos pondremos en contacto con usted.',
           showConfirmButton: true,
-          confirmButtonColor: "#fc6d6d",
-          background: "#343f4f",
-          color: "#fff"})
+          confirmButtonColor: "#112F2F",
+          background: "#F4FAFF",
+          color: "#000000"})
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
