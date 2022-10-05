@@ -9,6 +9,9 @@
 <link rel="shortcut icon" href="./img/imgshort (1) (1).png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Ilse</title>
 </head>
 <body>
@@ -21,13 +24,13 @@
           <div class="collapse navbar-collapse justify-content-end animate__animated animate__fadeIn" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link anclas" href="#"><strong>Servicios</strong></a>
+                <a class="nav-link anclas" href="#">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link anclas" href="#"><strong>Pricing</strong></a>
+                <a class="nav-link anclas" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link anclas" href="#"><strong>Disabled</strong></a>
+                <a class="nav-link anclas" href="#">Disabled</a>
               </li>
             </ul>
           </div>
@@ -47,7 +50,46 @@
         </div>
       </main>
       <section class="medio">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mt-4">
+                <form id="form">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" placeholder="Nombre:" class="form-control" name="name" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="last" class="form-label">Apellidos</label>
+                    <input type="text" placeholder="Apellidos:" class="form-control" name="last" id="last">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="text" placeholder="Teléfono:" class="form-control" name="phone" id="phone">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" placeholder="Email:" class="form-control" name="email" id="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <input type="text" placeholder="Mensaje:" class="form-control area" name="message" id="message">
+                  </div>
+                  <input type="submit" class="btn btn-success" id="button" value="Enviar" >
+                </form>        
+              <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+              
+              <script type="text/javascript">
+                emailjs.init('m-W59yXyhkP7VP76D')
+              </script>
 
+            </div>
+            <div>
+
+            </div>
+          </div>
+
+        </div>
       </section>
       <footer class="container-fluid">
         <div class="row mt-4">
@@ -57,16 +99,16 @@
         </div>
         <div class="partFooter col-lg-4 col-md-12 mt-4">
             <ul>
-              <li><p><i class="bi bi-geo-alt"></i>  Calle bla bla bla Monterrey Nuevo Leon</p></li>
-              <li><p><i class="bi bi-telephone"></i>  81-4564-4568</p></li>
-              <li><p><i class="bi bi-envelope"></i>  ilse@gmail.com</p></li>
+              <li><p><i class="bi bi-geo-alt"></i>  Col. Roma, Monterrey, Nuevo León.</p></li>
+              <li><p><i class="bi bi-telephone"></i>  +52 81 2911 5705</p></li>
+              <li><p><i class="bi bi-envelope"></i>  psic.ilsemb@gmail.com</p></li>
             </ul>
         </div>
         <div class="partFooter col-lg-4 col-md-12 mt-3">
             <h4>Redes sociales</h4>
             <div class="socialMedia">
               <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.instagram.com/psic.ilsebm/"><i class="bi bi-instagram"></i></a>
               <a href="#"><i class="bi bi-whatsapp"></i></a>
               <a href="#"><i class="bi bi-tiktok"></i></a>
             </div>
@@ -74,6 +116,36 @@
         </div>
       </footer>
 <!-- JavaScript Bundle with Popper -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_qvdkjpn';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      Swal.fire({
+          icon: 'success',
+          title: '¡Mensaje Enviado!',
+          text: 'En breve le contestaremos',
+          showConfirmButton: true,
+          confirmButtonColor: "#fc6d6d",
+          background: "#343f4f",
+          color: "#fff"})
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
 </body>
 </html>

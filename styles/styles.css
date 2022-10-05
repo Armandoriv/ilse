@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .intro {
@@ -127,6 +128,10 @@ nav {
 
 .medio {
   background-color: #D6D9CD;
-  height: 500px;
+  height: 600px;
   width: 100%;
+}
+
+.area {
+  height: 100px;
 }/*# sourceMappingURL=styles.css.map */
