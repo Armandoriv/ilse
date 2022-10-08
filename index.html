@@ -102,11 +102,11 @@
       <section class="medio">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 precio">
+            <div class="col-lg-6 precio mt-5">
               <h1 class="mt-3 center">Servicios</h1>
               <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus impedit odio saepe ullam necessitatibus esse modi. Ratione non perspiciatis, fuga soluta in voluptates quisquam repudiandae debitis porro voluptatibus, similique ut deleniti vitae corrupti voluptas eius accusantium exercitationem placeat. Accusamus ab sapiente aut alias ipsam harum nemo ex id cumque rerum reprehenderit dolor veritatis excepturi perspiciatis eum odit, minima necessitatibus! Dignissimos et odio, ratione necessitatibus illo nihil magnam nam impedit iure dolorum, sed doloribus! Fugit dignissimos quisquam eveniet expedita quaerat voluptatum vel repudiandae odit facere dolorem dolore esse inventore doloribus voluptas vitae veniam, reiciendis porro! Omnis ut, neque rem quod odio doloribus dicta dolorem eveniet, nisi quis culpa, quas iure. Alias iste facilis nisi aperiam error ullam accusamus laborum unde?</h5>
             </div>        
-            <div class="formulario col-lg-6">
+            <div class="formulario col-lg-6 mt-5">
                 <form id="form" class="form">
                   <h1 class="mt-3 center">Contacto</h1>
                   <div class="">
@@ -186,6 +186,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
+      this.reset()
       Swal.fire({
           icon: 'success',
           title: '¡Mensaje Enviado!',
@@ -193,7 +194,7 @@ document.getElementById('form')
           showConfirmButton: true,
           confirmButtonColor: "#112F2F",
           background: "#F4FAFF",
-          color: "#000000"})
+          color: "#000000"});
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
