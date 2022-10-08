@@ -17,6 +17,10 @@ main{
     position: relative;
     display: flex;
 }
+.icon{
+    width: 30px;
+    height: 50px;
+}
 nav{
     background: #ECC8BC;
 }
@@ -25,10 +29,6 @@ nav{
 }
 .wasu{
     width: 500px;
-}
-.subtitleee{
-    margin-top: 20px;
-    text-align: center;
 }
 .wasuu{
     width: 250px;
@@ -56,13 +56,67 @@ nav{
     justify-content: center;
 
 }
+.dobu{
+    background-color: #142E2D;
+    padding: 20px;
+}
+.txt{
+    color: #f4f4f4;
+    padding: 10px;
+    text-align: justify;
+}
+.txtt{
+    color: #f4f4f4;
+    padding: 10px;
+    justify-content: centers;
+    text-align: center;
+}
+.toxt{
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+}
+@keyframes animation{
+
+}
+.dobe{
+    background-color:  #EDCE7D;
+    align-items: center;
+    display: flex;
+}
 .area{
     height: 100px;
 }
+.fontCardie{
+    background-color:#fdf5e6 ;
+}
+.cardie{
+    height: 200px;
+}
+.quinsoy{
+    padding: 10px;
+}
+.ilsefoto{
+    width: 100%;
+    background-color: #142E2D;
+}
+.fotocont{
+    display: flex;
+    justify-content: center;
+}
+.fotillo{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #fdf5e6;
+    
+}
 .formulario{
-    background-color: #F0CC7C;
+    background-image: url(../img/Ilust\ 05.png);
     border-radius: 10px;
     padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 @media screen and (max-width: 600px) {
     
@@ -74,3 +128,14 @@ nav{
 
     }
   }
+  @media screen and (max-width: 385px) {
+    
+    .wasu {
+      width: 255px;
+    }
+    .wasuu{
+        width: 200px;
+
+    }
+  }
+
