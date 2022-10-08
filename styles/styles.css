@@ -99,6 +99,7 @@ main {
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
 }
 
 nav {
@@ -156,4 +157,13 @@ nav {
   background-color: #F0CC7C;
   border-radius: 10px;
   padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .wasu {
+    width: 375px;
+  }
+  .wasuu {
+    width: 200px;
+  }
 }/*# sourceMappingURL=styles.css.map */
