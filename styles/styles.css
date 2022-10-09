@@ -245,6 +245,12 @@ nav {
   background-image: url(../img/Ilust\ 05.png);
 }
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
 @media screen and (max-width: 600px) {
   .wasu {
     width: 375px;
