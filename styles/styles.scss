@@ -131,11 +131,52 @@ nav{
     text-align: center;
 
 }
+.servicio{
+    background-color: #142E2D;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bilboy{
+    display: flex;
+    justify-content: center;
+}
+.serviciol{
+    background-color: #142E2D;
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dineros{
+    display: flex;
+    justify-content: center;
+}
+.adentro{
+    display: flex;
+    color: white;
+}
+.adentro h5{
+    justify-content: center;
+}
+.adentrito{
+    width: 80%;
+}
 .precio{
     background-size: cover;
     background-position: center;
     position: relative;
     background-image: url(../img/Ilust\ 05.png);
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
 }
 .copyright{
     display: flex;
