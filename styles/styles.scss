@@ -184,6 +184,20 @@ nav{
     color: white;
 }
 @media screen and (max-width: 600px) {
+    .dineros{
+        display: flex;
+        justify-content: center;
+    }
+    .serviciol{
+        background-color: #142E2D;
+        width: 230px;
+        height: 100px;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .wasu {
       width: 375px;
